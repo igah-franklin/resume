@@ -6,6 +6,7 @@ import { FloatingDock } from "../ui/floating-dock";
 import {
   IconBrandGithub,
   IconBrandX,
+  IconBrandLinkedin,
   IconExchange,
   IconHome,
   IconNewSection,
@@ -21,23 +22,23 @@ export function FloatingDockIcons() {
       icon: (
         <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "/",
     },
 
-    {
-      title: "Products",
-      icon: (
-        <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
-    {
-      title: "Components",
-      icon: (
-        <IconNewSection className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
+    // {
+    //   title: "Products",
+    //   icon: (
+    //     <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+    //   ),
+    //   href: "#",
+    // },
+    // {
+    //   title: "Components",
+    //   icon: (
+    //     <IconNewSection className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+    //   ),
+    //   href: "#",
+    // },
     // {
     //   title: "Aceternity UI",
     //   icon: (
@@ -53,9 +54,9 @@ export function FloatingDockIcons() {
     {
       title: "Changelog",
       icon: (
-        <IconExchange className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconBrandLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "https://www.linkedin.com/in/igah-franklin/",
     },
 
     {
@@ -63,20 +64,20 @@ export function FloatingDockIcons() {
       icon: (
         <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "https://x.com/software_padi",
     },
     {
       title: "GitHub",
       icon: (
         <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "https://github.com/igah-franklin",
     },
   ];
   return (
-    <div className="flex items-center justify-center h-[35rem] w-full">
+    <div className="">
       <FloatingDock
-        mobileClassName="translate-y-20" 
+        mobileClassName="" 
         items={links}
       />
       <ModeToggle />
