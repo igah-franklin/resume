@@ -10,7 +10,7 @@ export function ModeToggle() {
   const { theme, setTheme } = useTheme();
 
   const toggleTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light");
+    setTheme(theme === "dark" ? "light" : "dark");
   };
 
   return (
@@ -22,9 +22,9 @@ export function ModeToggle() {
       onClick={toggleTheme}
     >
       {theme === "dark" ? (
-        <LampCeiling className="h-[1.2rem] w-[1.2rem] text-[#000]"  size={40}/>
+        <LampCeiling className="h-[1.2rem] w-[1.2rem] text-[#000]"  size={60} color="#fff"/>
       ) : (
-        <MoonStarIcon className="h-[1.2rem] w-[1.2rem] text-neutral-800" size={40} />
+        <MoonStarIcon className="h-[1.2rem] w-[1.2rem] text-dark text-neutral-800" size={60} />
       )}
     </Button>
   );

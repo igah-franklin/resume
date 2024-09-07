@@ -2,16 +2,17 @@ import { Icons } from "../components/icons/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
 
 export const DATA = {
-  name: "John Doe",
+  name: "Igah Franklin C",
   initials: "DV",
   url: "https://dillion.io",
-  location: "San Francisco, CA",
+  location: "Abuja, Nigeria",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
+  professinalTitle: "Senior software egineer",
   description:
-    "Software Engineer turned Entrepreneur. I love building things and helping people. Very active on Twitter.",
+    "Software Engineer, I love building software products and helping people. Health and Bioinformatics Enthusiast.",
   summary:
-    "At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE), and [competed in over 21 hackathons for fun](/#hackathons). I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1).",
-  avatarUrl: "/me.png",
+    "Senior Frontend Engineer with extensive experience in building scalable, high-performance web and mobile applications. Strong design sense with deep knowledge of modern technologies, skilled in translating UI/UX designs into dynamic, interactive pages while ensuring scalability, performance, responsive design, accessibility, SEO optimization, and clean architecture.",
+  avatarUrl: "/assets/png/developer.png",
   skills: [
     "React",
     "Next.js",
@@ -30,26 +31,26 @@ export const DATA = {
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
-    email: "hello@example.com",
-    tel: "+123456789",
+    email: "igahfranklin@gmail.com",
+    tel: "+2349052089164",
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://dub.sh/dillion-github",
+        url: "https://github.com/igah-franklin",
         icon: Icons.github,
 
         navbar: true,
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://dub.sh/dillion-linkedin",
+        url: "https://www.linkedin.com/in/igah-franklin/",
         icon: Icons.linkedin,
 
         navbar: true,
       },
       X: {
         name: "X",
-        url: "https://dub.sh/dillion-twitter",
+        url: "https://x.com/digital_padi",
         icon: Icons.x,
 
         navbar: true,
