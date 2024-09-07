@@ -16,13 +16,13 @@ import Image from "next/image";
 
 export function FloatingDockIcons() {
   const links = [
-    {
-      title: "Home",
-      icon: (
-        <IconHome className="h-full w-full text-neutral-500 dark:text-yellow-700" />
-      ),
-      href: "/",
-    },
+    // {
+    //   title: "Home",
+    //   icon: (
+    //     <IconHome className="h-full w-full text-neutral-500 dark:text-yellow-700" />
+    //   ),
+    //   href: "/",
+    // },
     {
       title: "Linkedin",
       icon: (

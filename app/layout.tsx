@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
-import { DATA } from './data/resume'
+import { profileData } from './data/resume'
 import { ThemeProvider } from "./components/theme-provider";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -15,17 +15,17 @@ const montserrat = Montserrat({ subsets: ["latin"] });
 // };
 
 export const metadata: Metadata = {
-  metadataBase: new URL(DATA.url),
+  metadataBase: new URL(profileData.url),
   title: {
-    default: DATA.name,
-    template: `%s | ${DATA.name}`,
+    default: profileData.name,
+    template: `%s | ${profileData.name}`,
   },
-  description: DATA.description,
+  description: profileData.description,
   openGraph: {
-    title: `${DATA.name}`,
-    description: DATA.description,
-    url: DATA.url,
-    siteName: `${DATA.name}`,
+    title: `${profileData.name}`,
+    description: profileData.description,
+    url: profileData.url,
+    siteName: `${profileData.name}`,
     locale: "en_US",
     type: "website",
   },
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: `${DATA.name}`,
+    title: `${profileData.name}`,
     card: "summary_large_image",
   },
   verification: {
