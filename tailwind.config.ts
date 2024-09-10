@@ -22,7 +22,7 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       images: {
-        domains: ['aceternity.com'], // Add any other domains you need here
+        domains: ['aceternity.com'], // Add any other domains here if needed
       },
       animation: {
         scroll:
