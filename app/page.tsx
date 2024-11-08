@@ -9,10 +9,13 @@ import { BackgroundLinesDemo } from "./components/hero/BackgroundLinesDemo";
 import { Projects } from "./components/hero/Projects";
 import { Experience } from "./components/hero/Experience";
 
-
+import ScrollToTop from "react-scroll-to-top";
+import { Footer } from "./components/footer";
+import Form from "./components/form/Form";
 
 
 export default function Home() {
+  
 
   return (
     <GrowtbookWrapper
@@ -24,7 +27,8 @@ export default function Home() {
           <InfiniteMovingCards />
         </div>
       </main> */}
-      <div>
+       <ScrollToTop smooth color="#6f00ff" />
+      <div className="bg-black">
         <BackgroundLinesDemo />
         <div className="md:w-7/12 m-auto">
           <Experience />
@@ -32,6 +36,9 @@ export default function Home() {
           <hr />
           <hr />
           <Projects />
+          <hr />
+          <Form />
+          <Footer />
         </div>
       </div>
     </GrowtbookWrapper>
