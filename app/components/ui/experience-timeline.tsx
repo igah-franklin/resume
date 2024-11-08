@@ -42,7 +42,7 @@ export const ExperienceTimeline = ({ data }: { data: TimelineEntry[] }) => {
           Experience
         </h2>
         <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm">
-          Check out some of the companies I&apos;ve worked for 😍
+          Check out some of the companies I've worked for 😍
         </p>
       </div>
 
