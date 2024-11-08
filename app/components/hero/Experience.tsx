@@ -28,6 +28,7 @@ export function Experience() {
             </ul>
             <div className="grid grid-cols-[repeat(auto-fit,minmax(120px,1fr))] gap-2 my-2">
               <BottomGlowButton text="Typescript" />
+              <BottomGlowButton text="React Js" />
               <BottomGlowButton text="Next Js" />
               <BottomGlowButton text="Postgresql" />
               <BottomGlowButton text="Node Js" />
@@ -57,7 +58,7 @@ export function Experience() {
               <BottomGlowButton text="Next Js" />
               <BottomGlowButton text="React Js" />
               <BottomGlowButton text="Express Js" />
-              <BottomGlowButton text="Tailwind Css" />
+              <BottomGlowButton text="MongoDB" />
             </div>
           </div>
         </div>
@@ -68,7 +69,7 @@ export function Experience() {
       content: (
         <div>
         <em className="text-2xl mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500">
-        Full Stack Engineer
+        Frontend Developer
         </em>
         <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-xl font-bold mb-8">
         Huesdek
@@ -83,10 +84,10 @@ export function Experience() {
             </li>
           </ul>
           <div className="grid grid-cols-[repeat(auto-fit,minmax(120px,1fr))] gap-2 my-2">
-            <BottomGlowButton text="Typescript" />
-            <BottomGlowButton text="Next Js" />
-            <BottomGlowButton text="Postgresql" />
-            <BottomGlowButton text="Node Js" />
+            <BottomGlowButton text="Javascript" />
+            <BottomGlowButton text="WordPress" />
+            <BottomGlowButton text="Figma" />
+            <BottomGlowButton text="Adobe Photoshop" />
           </div>
         </div>
       </div>
@@ -109,10 +110,8 @@ export function Experience() {
             </li>
           </ul>
           <div className="grid grid-cols-[repeat(auto-fit,minmax(120px,1fr))] gap-2 my-2">
-            <BottomGlowButton text="Typescript" />
-            <BottomGlowButton text="Next Js" />
-            <BottomGlowButton text="Postgresql" />
-            <BottomGlowButton text="Node Js" />
+            <BottomGlowButton text="ReacNative" />
+            <BottomGlowButton text="React Js" />
           </div>
         </div>
       </div>
