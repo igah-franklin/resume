@@ -60,35 +60,61 @@ export function Projects() {
           <p className="text-neutral-800 dark:text-neutral-200 text-lg md:text-sm font-normal mb-8">
             Integrated frontend components with backend APIs for displaying electronic health records (EHR), enabling seamless and secure data exchange.
           </p>
+          {/* <div className="grid grid-cols-2 gap-4">
+            <Image
+              src="https://res.cloudinary.com/dtmsptewu/image/upload/v1731087260/Screenshot_2024-11-08_at_18.33.18_uickay.png"
+              alt="startup template"
+              width={500}
+              height={500}
+              className="rounded-lg object-contain h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+            <Image
+              src="https://res.cloudinary.com/dtmsptewu/image/upload/v1731087260/Screenshot_2024-11-08_at_18.29.42_vwmmym.png"
+              alt="startup template"
+              width={500}
+              height={500}
+              className="rounded-lg object-contain h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+            <Image
+              src="https://res.cloudinary.com/dtmsptewu/image/upload/v1731087260/Screenshot_2024-11-08_at_18.33.18_uickay.png"
+              alt="startup template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+            <Image
+              src="https://res.cloudinary.com/dtmsptewu/image/upload/v1731087260/Screenshot_2024-11-08_at_18.29.42_vwmmym.png"
+              alt="startup template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+          </div> */}
           <div className="grid grid-cols-2 gap-4">
-            <Image
-              src="https://res.cloudinary.com/dtmsptewu/image/upload/v1731087260/Screenshot_2024-11-08_at_18.33.18_uickay.png"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-contain h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="https://res.cloudinary.com/dtmsptewu/image/upload/v1731087260/Screenshot_2024-11-08_at_18.29.42_vwmmym.png"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-contain h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="https://res.cloudinary.com/dtmsptewu/image/upload/v1731087260/Screenshot_2024-11-08_at_18.33.18_uickay.png"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="https://res.cloudinary.com/dtmsptewu/image/upload/v1731087260/Screenshot_2024-11-08_at_18.29.42_vwmmym.png"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
+            {[
+              "https://res.cloudinary.com/dtmsptewu/image/upload/v1731087260/Screenshot_2024-11-08_at_18.33.18_uickay.png",
+              "https://res.cloudinary.com/dtmsptewu/image/upload/v1731087260/Screenshot_2024-11-08_at_18.29.42_vwmmym.png",
+              "https://res.cloudinary.com/dtmsptewu/image/upload/v1731087260/Screenshot_2024-11-08_at_18.33.18_uickay.png",
+              "https://res.cloudinary.com/dtmsptewu/image/upload/v1731087260/Screenshot_2024-11-08_at_18.29.42_vwmmym.png",
+            ].map((src, index) => (
+              <div
+                key={index}
+                className="relative group rounded-lg shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              >
+                <Image
+                  src={src}
+                  alt="startup template"
+                  width={500}
+                  height={500}
+                  className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full"
+                />
+                <div className="absolute inset-0 bg-black bg-opacity-50 rounded-lg opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
+                  <button className="px-4 py-2 bg-white text-black rounded-lg shadow-lg hover:bg-gray-200 transition-colors duration-200">
+                    View More
+                  </button>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       ),
