@@ -9,7 +9,8 @@ export const profileData = {
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
   professinalTitle: "Senior software engineer",
   description:
-    "I love building software products and helping people. Health and Bioinformatics Enthusiast.",
+    "Senior Frontend Engineer with extensive experience in building scalable, high-performance web and mobile applications. Strong design sense with deep knowledge of modern technologies, skilled in translating UI/UX designs into dynamic, interactive pages while ensuring scalability, performance, responsive design, accessibility, SEO optimization, and clean architecture.",
+    //"I love building software products and helping people. Health and Bioinformatics Enthusiast.",
   summary:
     "Senior Frontend Engineer with extensive experience in building scalable, high-performance web and mobile applications. Strong design sense with deep knowledge of modern technologies, skilled in translating UI/UX designs into dynamic, interactive pages while ensuring scalability, performance, responsive design, accessibility, SEO optimization, and clean architecture.",
   avatarUrl: "/assets/png/developer.png",
