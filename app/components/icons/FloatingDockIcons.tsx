@@ -36,7 +36,7 @@ export function FloatingDockIcons() {
       icon: (
         <IconBrandX className="h-full w-full text-neutral-500 dark:text-yellow-700" />
       ),
-      href: "https://x.com/software_padi",
+      href: "https://x.com/digital_padi",
     },
     {
       title: "GitHub",

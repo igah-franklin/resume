@@ -4,7 +4,7 @@ import { HomeIcon, NotebookIcon } from "lucide-react";
 export const profileData = {
   name: "Igah Franklin",
   initials: "DV",
-  url: "https://dillion.io",
+  url: "https://igah-franklin.github.io/resume/",
   location: "Abuja, Nigeria",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
   professinalTitle: "Senior software engineer",
