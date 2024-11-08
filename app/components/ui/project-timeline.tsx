@@ -43,7 +43,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         </h2>
         {/* eslint-disable react/no-unescaped-entities */}
         <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm">
-          Check out some of the projects I&apos;ve completed 🧳
+          Check out some of the projects I have completed 🧳
         </p>
         {/* eslint-disable react/no-unescaped-entities */}
       </div>

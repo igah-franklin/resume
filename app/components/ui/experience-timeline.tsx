@@ -43,7 +43,7 @@ export const ExperienceTimeline = ({ data }: { data: TimelineEntry[] }) => {
         </h2>
         {/* eslint-disable react/no-unescaped-entities */}
         <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm">
-          Check out some of the companies I&apos;ve worked for 😍
+          Check out some of the companies I have worked for 😍
         </p>
         {/* eslint-enable react/no-unescaped-entities  */}
       </div>
