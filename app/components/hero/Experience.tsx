@@ -14,7 +14,7 @@ export function Experience() {
           <em className="text-2xl mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500">
             Full Stack Developer
           </em>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-xl font-bold mb-8">
+          <p className="text-neutral-800 dark:text-neutral-200 text-lg md:text-xl font-bold mb-8">
             eHealth Africa
           </p>
           <div>
@@ -44,7 +44,7 @@ export function Experience() {
           <em className="text-2xl mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500">
           Senior Frontend Engineer
           </em>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-xl font-bold mb-8">
+          <p className="text-neutral-800 dark:text-neutral-200 text-lg md:text-xl font-bold mb-8">
             Salistech Limited
           </p>
           <div>
@@ -71,7 +71,7 @@ export function Experience() {
         <em className="text-2xl mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500">
         Frontend Developer
         </em>
-        <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-xl font-bold mb-8">
+        <p className="text-neutral-800 dark:text-neutral-200 text-lg md:text-xl font-bold mb-8">
         Huesdek
         </p>
         <div>
@@ -100,7 +100,7 @@ export function Experience() {
         <em className="text-2xl mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500">
         Mobile Application Developer
         </em>
-        <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-xl font-bold mb-8">
+        <p className="text-neutral-800 dark:text-neutral-200 text-lg md:text-xl font-bold mb-8">
         Upwork
         </p>
         <div>
@@ -124,7 +124,7 @@ export function Experience() {
         <em className="text-2xl mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500">
         Frontend Developer
         </em>
-        <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-xl font-bold mb-8">
+        <p className="text-neutral-800 dark:text-neutral-200 text-lg md:text-xl font-bold mb-8">
         Rivetrix Toys, (Australia)
         </p>
         <div>

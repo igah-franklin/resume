@@ -12,7 +12,7 @@ export function Projects() {
           <em className="text-2xl mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500">
             ShowingXchange Mobile Apps (Android & IOS)
           </em>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+          <p className="text-neutral-800 dark:text-neutral-200 text-lg md:text-sm font-normal mb-8">
             Premier platform designed to bridge the 
             gap between house seekers and real estate agents. Whether you’re looking to buy, rent, or simply explore available properties, 
             Showingxchange provides a seamless and efficient way to connect with agents ready to show you around.
@@ -57,7 +57,7 @@ export function Projects() {
           <em className="text-2xl mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500">
             Health Manager Dashboard
           </em>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+          <p className="text-neutral-800 dark:text-neutral-200 text-lg md:text-sm font-normal mb-8">
             Integrated frontend components with backend APIs for displaying electronic health records (EHR), enabling seamless and secure data exchange.
           </p>
           <div className="grid grid-cols-2 gap-4">
@@ -100,7 +100,7 @@ export function Projects() {
           <em className="text-2xl mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500">
             Majorgen
           </em>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+          <p className="text-neutral-800 dark:text-neutral-200 text-lg md:text-sm font-normal mb-8">
             A powerful and intuitive resume creation platform 
             designed to help you craft professional and standout resumes with ease. 
             Whether you&apos;re a recent graduate or an experienced professional, 
