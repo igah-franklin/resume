@@ -90,7 +90,6 @@
 
 "use client";
 import {
-  useMotionValueEvent,
   useScroll,
   useTransform,
   motion,
@@ -103,19 +102,48 @@ interface TimelineEntry {
   content: React.ReactNode;
 }
 
-export const ExperienceTimeline = ({ data }: { data: TimelineEntry[] }) => {
+// Custom hook to handle intersection observer and animation
+const useInViewAnimation = () => {
+  const controls = useAnimation();
   const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          controls.start({
+            opacity: 1,
+            y: 0,
+            transition: { duration: 0.6, ease: "easeOut" },
+          });
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    const currentRef = ref.current;
+    if (currentRef) observer.observe(currentRef);
+
+    return () => {
+      if (currentRef) observer.unobserve(currentRef);
+    };
+  }, [controls]);
+
+  return { ref, controls };
+};
+
+export const ExperienceTimeline = ({ data }: { data: TimelineEntry[] }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [height, setHeight] = useState(0);
 
-  // Handle height updates on resize
+  // Update the height of the line element
   useEffect(() => {
     const updateHeight = () => {
-      if (ref.current) {
-        setHeight(ref.current.getBoundingClientRect().height);
+      if (containerRef.current) {
+        setHeight(containerRef.current.getBoundingClientRect().height);
       }
     };
-    updateHeight(); // Initial call
+    updateHeight();
     window.addEventListener("resize", updateHeight);
     return () => window.removeEventListener("resize", updateHeight);
   }, []);
@@ -142,39 +170,17 @@ export const ExperienceTimeline = ({ data }: { data: TimelineEntry[] }) => {
         </p>
       </div>
 
-      <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
+      <div className="relative max-w-7xl mx-auto pb-20">
         {data.map((item, index) => {
-          const controls = useAnimation();
-          const itemRef = useRef<HTMLDivElement>(null);
-
-          // Set up IntersectionObserver to trigger animation
-          useEffect(() => {
-            const observer = new IntersectionObserver(
-              ([entry]) => {
-                if (entry.isIntersecting) {
-                  controls.start({
-                    opacity: 1,
-                    y: 0,
-                    transition: { duration: 0.6, ease: "easeOut" },
-                  });
-                }
-              },
-              { threshold: 0.3 } // Trigger when 30% of the item is in view
-            );
-            if (itemRef.current) observer.observe(itemRef.current);
-
-            return () => {
-              if (itemRef.current) observer.unobserve(itemRef.current);
-            };
-          }, [controls]);
+          const { ref, controls } = useInViewAnimation();
 
           return (
             <motion.div
               key={index}
               className="flex justify-start pt-10 md:pt-40 md:gap-10"
-              ref={itemRef}
-              initial={{ opacity: 0, y: 50 }} // Initial state before in-view
-              animate={controls} // Control animation based on visibility
+              ref={ref}
+              initial={{ opacity: 0, y: 50 }}
+              animate={controls}
             >
               <div className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">
                 <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-white dark:bg-black flex items-center justify-center">
