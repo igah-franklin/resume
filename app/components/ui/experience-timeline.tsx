@@ -110,6 +110,7 @@ export const ExperienceTimeline = ({ data }: { data: TimelineEntry[] }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [height, setHeight] = useState(0);
 
+  // Set up scroll behavior
   useEffect(() => {
     if (ref.current) {
       const rect = ref.current.getBoundingClientRect();
@@ -124,6 +125,9 @@ export const ExperienceTimeline = ({ data }: { data: TimelineEntry[] }) => {
 
   const heightTransform = useTransform(scrollYProgress, [0, 1], [0, height]);
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
+
+  // Animation controls at the top level
+  const controls = useAnimation();
 
   return (
     <div
@@ -141,8 +145,6 @@ export const ExperienceTimeline = ({ data }: { data: TimelineEntry[] }) => {
 
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
         {data.map((item, index) => {
-          const controls = useAnimation(); // Initialize useAnimation hook here
-
           return (
             <InView
               key={index}
@@ -161,7 +163,7 @@ export const ExperienceTimeline = ({ data }: { data: TimelineEntry[] }) => {
               }}
             >
               <motion.div
-                animate={controls} // Use the controls to animate the element
+                animate={controls} // Use the animation control here
                 initial={{ opacity: 0, x: -50 }}
                 className="flex justify-start pt-10 md:pt-40 md:gap-10"
               >
