@@ -12,7 +12,6 @@ import { Experience } from "./components/hero/Experience";
 import ScrollToTop from "react-scroll-to-top";
 import { Footer } from "./components/footer";
 import Form from "./components/form/Form";
-import { CompareHero } from "./components/hero/CompareHero";
 
 
 export default function Home() {
@@ -30,7 +29,6 @@ export default function Home() {
       </main> */}
        <ScrollToTop smooth color="#6f00ff" />
       <div className="bg-black">
-        <CompareHero />
         <BackgroundLinesDemo />
         <div className="md:w-7/12 m-auto">
           <Experience />
@@ -40,7 +38,7 @@ export default function Home() {
           <Projects />
           <hr />
           <Form />
-          <Footer />
+           <Footer />
         </div>
       </div>
     </GrowtbookWrapper>
