@@ -103,7 +103,7 @@ export function Projects() {
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
             A powerful and intuitive resume creation platform 
             designed to help you craft professional and standout resumes with ease. 
-            Whether you're a recent graduate or an experienced professional, 
+            Whether you&apos;re a recent graduate or an experienced professional, 
             Resume Link provides customizable templates, AI-driven suggestions, 
             and seamless LinkedIn integration to showcase your skills and experience. 
           </p>

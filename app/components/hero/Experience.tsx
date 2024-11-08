@@ -131,7 +131,7 @@ export function Experience() {
         <div>
           <ul>
             <li className="list-disc">
-            Built and maintained company's online store via a third party integration (shopify)
+            Built and maintained company&apos;s online store via a third party integration (shopify)
             </li>
             <li className="list-disc">
             Fixed bugs from existing website and implemented enhancements that sig- nificantly improved web functionality and speed.
