@@ -14,4 +14,4 @@ pnpm dev
 bun dev
 ```
 
-Check out the site on  [Next.js deployment documentation]([https://nextjs.org/docs/deployment](https://igah-franklin.github.io/resume/))
+Check out the site  [here](https://igah-franklin.github.io/resume/)
