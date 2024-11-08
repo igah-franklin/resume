@@ -141,7 +141,7 @@ export const ExperienceTimeline = ({ data }: { data: TimelineEntry[] }) => {
 
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
         {data.map((item, index) => {
-          const controls = useAnimation();
+          const controls = useAnimation(); // moved outside of callback
 
           return (
             <InView
@@ -152,11 +152,11 @@ export const ExperienceTimeline = ({ data }: { data: TimelineEntry[] }) => {
                 if (inView) {
                   controls.start({
                     opacity: 1,
-                    y: 0,
+                    x: 0,
                     transition: { duration: 0.6, ease: "easeOut" },
                   });
                 } else {
-                  controls.start({ opacity: 0, y: -50 });
+                  controls.start({ opacity: 0, x: -50 });
                 }
               }}
             >
