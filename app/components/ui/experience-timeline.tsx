@@ -41,9 +41,11 @@ export const ExperienceTimeline = ({ data }: { data: TimelineEntry[] }) => {
         <h2 className="text-lg md:text-4xl mb-4 font-bold text-neutral-500 dark:text-neutral-500 max-w-4xl uppercase">
           Experience
         </h2>
+        {/* eslint-disable react/no-unescaped-entities */}
         <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm">
-          Check out some of the companies I've worked for 😍
+          Check out some of the companies I&apos;ve worked for 😍
         </p>
+        {/* eslint-enable react/no-unescaped-entities  */}
       </div>
 
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
