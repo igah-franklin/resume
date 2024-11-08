@@ -7,7 +7,7 @@ export const profileData = {
   url: "https://dillion.io",
   location: "Abuja, Nigeria",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
-  professinalTitle: "Senior software egineer",
+  professinalTitle: "Senior software engineer",
   description:
     "I love building software products and helping people. Health and Bioinformatics Enthusiast.",
   summary:

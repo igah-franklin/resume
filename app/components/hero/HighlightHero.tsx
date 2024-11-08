@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import { useFeatureIsOn } from "@growthbook/growthbook-react";
 import Image from "next/image";
 import { HeroHighlight, Highlight } from "../ui/hero-highlight";
 import softwareDeveloper from '../../../public/assets/png/developer.png'
@@ -7,12 +8,18 @@ import { FloatingDockIcons } from "../icons/FloatingDockIcons";
 import { profileData } from "@/app/data/resume";
 
 export function HighlightHero() {
+  const enabled = useFeatureIsOn("promobanner");
+
+  console.log(enabled, 'enabled')
+  
   return (
     <div className="h-screen flex">
         <div className="w-3/4 md:w-1/2 h-full md:px-10">
             <HeroHighlight>
             <div className="w-1/2 md:w-full flex justify-center mb-5">
-                <FloatingDockIcons />
+                {
+                  enabled === false ? <FloatingDockIcons /> : <h3>not enabled</h3>
+                }
             </div>
             <motion.h1
                 initial={{
