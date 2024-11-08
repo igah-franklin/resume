@@ -95,7 +95,7 @@ import {
   useScroll,
   useTransform,
   motion,
-  useAnimation,
+  useAnimation, // Import useAnimation here
 } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
 import { InView } from "react-intersection-observer";
@@ -141,7 +141,7 @@ export const ExperienceTimeline = ({ data }: { data: TimelineEntry[] }) => {
 
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
         {data.map((item, index) => {
-          const controls = useAnimation(); // moved outside of callback
+          const controls = useAnimation(); // Initialize useAnimation hook here
 
           return (
             <InView
@@ -161,7 +161,7 @@ export const ExperienceTimeline = ({ data }: { data: TimelineEntry[] }) => {
               }}
             >
               <motion.div
-                animate={controls}
+                animate={controls} // Use the controls to animate the element
                 initial={{ opacity: 0, x: -50 }}
                 className="flex justify-start pt-10 md:pt-40 md:gap-10"
               >
