@@ -11,7 +11,7 @@ const Footer = () => {
             © 2024 | Igah Franklin | All Rights Reserved
           </span>
             </p>
-            <ul className='flex justify-cente items-center gap-3 my-3'>
+            <ul className='flex justify-cente items-center gap-3 my-3 hidden md:block'>
                 <li><a target='_blank' href="https://www.linkedin.com/in/igah-franklin/"><LinkedInLogoIcon className='w-9 h-9 hover:translate-y-1 duration-300 cursor-pointer'/></a></li>
                 <li><a target='_blank' href="https://github.com/igah-franklin"><GitHubLogoIcon className='w-9 h-9 hover:translate-y-1 duration-300 cursor-pointer'/></a></li>
             </ul>
