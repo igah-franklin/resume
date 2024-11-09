@@ -1,9 +1,21 @@
 import Image from "next/image";
 import React from "react";
+import { FaApple, FaAndroid, FaEye } from "react-icons/fa";
+import { InstagramLogoIcon, LockClosedIcon } from "@radix-ui/react-icons";
 import { Timeline } from "../ui/project-timeline";
 
 
 export function Projects() {
+
+  const handleRedirectGooglePlay = ()=>{
+    window.location.href = 'https://play.google.com/store/apps/details?id=com.piiexpo.showingexchangev1';
+  }
+  const handleRedirectAppleStore = ()=>{
+      window.location.href = 'https://apps.apple.com/us/app/showingxchange/id6503052181';
+  }
+  const handleRedirectMajorgen = ()=>{
+      window.location.href = 'https://majorgen.com/';
+  }
   const data = [
     {
       title: "1",
@@ -17,7 +29,7 @@ export function Projects() {
             gap between house seekers and real estate agents. Whether you’re looking to buy, rent, or simply explore available properties, 
             Showingxchange provides a seamless and efficient way to connect with agents ready to show you around.
           </p>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-4 relative group rounded-lg shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] duration-500">
             <Image
               src="https://res.cloudinary.com/dtmsptewu/image/upload/v1731086024/Screenshot_2024-11-08_at_18.08.54_f9npaq.png"
               alt="startup template"
@@ -46,6 +58,20 @@ export function Projects() {
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
+            <div className="absolute inset-0 bg-black bg-opacity-70 rounded-lg opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
+                 <div className="flex flex-col gap-3">
+                    <button 
+                    onClick={handleRedirectAppleStore}
+                    className="flex items-center gap-3 px-4 py-2 bg-white text-black rounded-lg shadow-lg hover:bg-gray-200 transition-colors duration-200">
+                      <FaApple/> Download on Apple Store
+                      </button>
+                      <button 
+                      onClick={handleRedirectGooglePlay}
+                      className="flex items-center gap-3 px-4 py-2 bg-white text-black rounded-lg shadow-lg hover:bg-gray-200 transition-colors duration-200">
+                      <FaAndroid/> Download on Google Play
+                      </button>
+                 </div>
+            </div>
           </div>
         </div>
       ),
@@ -60,7 +86,7 @@ export function Projects() {
           <p className="text-neutral-800 dark:text-neutral-200 text-lg md:text-sm font-normal mb-8">
             Integrated frontend components with backend APIs for displaying electronic health records (EHR), enabling seamless and secure data exchange.
           </p>
-          {/* <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-4 relative group rounded-lg shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] duration-500">
             <Image
               src="https://res.cloudinary.com/dtmsptewu/image/upload/v1731087260/Screenshot_2024-11-08_at_18.33.18_uickay.png"
               alt="startup template"
@@ -89,32 +115,11 @@ export function Projects() {
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
-          </div> */}
-          <div className="grid grid-cols-2 gap-4">
-            {[
-              "https://res.cloudinary.com/dtmsptewu/image/upload/v1731087260/Screenshot_2024-11-08_at_18.33.18_uickay.png",
-              "https://res.cloudinary.com/dtmsptewu/image/upload/v1731087260/Screenshot_2024-11-08_at_18.29.42_vwmmym.png",
-              "https://res.cloudinary.com/dtmsptewu/image/upload/v1731087260/Screenshot_2024-11-08_at_18.33.18_uickay.png",
-              "https://res.cloudinary.com/dtmsptewu/image/upload/v1731087260/Screenshot_2024-11-08_at_18.29.42_vwmmym.png",
-            ].map((src, index) => (
-              <div
-                key={index}
-                className="relative group rounded-lg shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-              >
-                <Image
-                  src={src}
-                  alt="startup template"
-                  width={500}
-                  height={500}
-                  className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full"
-                />
-                <div className="absolute inset-0 bg-black bg-opacity-50 rounded-lg opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
-                  <button className="px-4 py-2 bg-white text-black rounded-lg shadow-lg hover:bg-gray-200 transition-colors duration-200">
-                    View More
+            <div className="absolute inset-0 bg-black bg-opacity-70 rounded-lg opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
+                  <button className="flex items-center gap-3 px-4 py-2 bg-white text-black rounded-lg shadow-lg hover:bg-gray-200 transition-colors duration-200">
+                   <LockClosedIcon/> Private project
                   </button>
-                </div>
-              </div>
-            ))}
+            </div>
           </div>
         </div>
       ),
@@ -133,7 +138,7 @@ export function Projects() {
             Resume Link provides customizable templates, AI-driven suggestions, 
             and seamless LinkedIn integration to showcase your skills and experience. 
           </p>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-4 relative group rounded-lg shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] duration-500">
             <Image
               src="https://res.cloudinary.com/dtmsptewu/image/upload/v1731085877/majorgen-dashboard_fd4gux.png"
               alt="startup template"
@@ -162,6 +167,13 @@ export function Projects() {
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
+             <div className="absolute inset-0 bg-black bg-opacity-70 rounded-lg opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
+                  <button 
+                  onClick={handleRedirectMajorgen}
+                  className="flex items-center gap-3 px-4 py-2 bg-white text-black rounded-lg shadow-lg hover:bg-gray-200 transition-colors duration-200">
+                   <FaEye/> View Project
+                  </button>
+            </div>
           </div>
         </div>
       ),
