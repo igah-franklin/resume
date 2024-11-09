@@ -8,7 +8,7 @@ const Footer = () => {
             <p>
             Crafted with creativity, curiosity, and countless cups of coffee ☕. <br /> Let&apos;s build something awesome together! 🚀✨ <br />
             <span className=" text-gray-400 text-sm center sm:py-0 w-2/3">
-            © 2024 | Igah Franklin | All Rights Reserved
+             Igah Franklin | All Rights Reserved © 2024
           </span>
             </p>
             <ul className='flex justify-cente items-center gap-3 my-3 hidden md:block'>

@@ -1,6 +1,7 @@
 
 'use client'
 
+import { FaArrowUp } from "react-icons/fa";
 import { MacbookScrollHero } from "./components/hero/MacbookScrollHero";
 import { HighlightHero } from "./components/hero/HighlightHero";
 import { InfiniteMovingCards } from "./components/cards/InfiniteMovingCards";
@@ -27,13 +28,28 @@ export default function Home() {
           <InfiniteMovingCards />
         </div>
       </main> */}
-       <ScrollToTop smooth color="#6f00ff" />
+       <ScrollToTop
+        smooth
+        color="#6f00ff"
+        style={{
+          backgroundColor: "#e3e3e3",
+          borderRadius: "50%",
+          right: "20px", 
+          bottom: "20px",
+          width: "50px",
+          height: "50px",
+          boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.2)",
+          display: "flex",
+          justifyContent: 'center',
+          alignItems: 'center'
+        }}
+        component={<FaArrowUp size="20px" color="#000" />} 
+        top={300}
+      />
       <div className="bg-black">
         <BackgroundLinesDemo />
-        <div className="md:w-7/12 m-auto">
+        <div className="lg:w-7/12 m-auto">
           <Experience />
-          <hr />
-          <hr />
           <hr />
           <Projects />
           <hr />

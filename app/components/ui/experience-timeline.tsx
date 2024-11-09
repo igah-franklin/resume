@@ -41,7 +41,7 @@ export const ExperienceTimeline = ({ data }: { data: TimelineEntry[] }) => {
         <h2 className="text-4xl mb-4 font-bold text-neutral-500 dark:text-neutral-500 max-w-4xl uppercase">
           Experience
         </h2>
-        <p className="text-neutral-700 dark:text-neutral-300 text-lg md:text-base max-w-sm">
+        <p className="text-neutral-700 dark:text-neutral-300 text-2xl max-w-sm">
           Check out some of the companies I have worked for 😍
         </p>
       </div>
@@ -62,7 +62,7 @@ export const ExperienceTimeline = ({ data }: { data: TimelineEntry[] }) => {
             </div>
 
             <div className="relative pl-20 pr-4 md:pl-4 w-full hover:bg-neutral-900 md:hover:p-7 hover:rounded-md duration-500">
-              <h3 className="md:hidden block text-2xl mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500">
+              <h3 className="md:hidden block text-lg md:text-2xl mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500">
                 {item.title}
               </h3>
               {item.content}{" "}

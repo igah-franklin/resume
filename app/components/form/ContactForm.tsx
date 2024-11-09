@@ -24,11 +24,11 @@ export function ContactForm() {
       <form className="my-8" onSubmit={handleSubmit}>
         <LabelInputContainer className="mb-4">
           <Label htmlFor="fullname">Full Name</Label>
-          <Input id="fullname" placeholder="projectmayhem@fc.com" type="text" />
+          <Input id="fullname" placeholder="your email" type="text" />
         </LabelInputContainer>
         <LabelInputContainer className="mb-4">
           <Label htmlFor="email">Email Address</Label>
-          <Input id="email" placeholder="projectmayhem@fc.com" type="email" />
+          <Input id="email" placeholder="your email" type="email" />
         </LabelInputContainer>
         <LabelInputContainer className="mb-8">
           <Label htmlFor="message">Your Message</Label>

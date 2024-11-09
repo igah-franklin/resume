@@ -87,7 +87,7 @@ export function Experience() {
             <BottomGlowButton text="Javascript" />
             <BottomGlowButton text="WordPress" />
             <BottomGlowButton text="Figma" />
-            <BottomGlowButton text="Adobe Photoshop" />
+            <BottomGlowButton text="Photoshop" />
           </div>
         </div>
       </div>
@@ -110,7 +110,7 @@ export function Experience() {
             </li>
           </ul>
           <div className="grid grid-cols-[repeat(auto-fit,minmax(120px,1fr))] gap-2 my-2">
-            <BottomGlowButton text="ReacNative" />
+            <BottomGlowButton text="React Native" />
             <BottomGlowButton text="React Js" />
           </div>
         </div>

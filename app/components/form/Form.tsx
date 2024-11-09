@@ -8,7 +8,7 @@ const Form = () => {
         <div className='md:w-4/12'>
             <h3 className='text-4xl mb-4 font-bold text-neutral-500 dark:text-neutral-500 '>lets connect!</h3>
             <p>
-            If you ever want to grab a coffee/bubble tea (virtually) or just want a quick chat - you can find me on social media or you can send me a message here!
+            Let&apos;s grab a virtual coffee or chat! Find me on social or drop a message here!
             </p>
             <ul className='flex justify-cente items-center gap-3 my-3'>
                 <li><a target='_blank' href="https://www.linkedin.com/in/igah-franklin/"><LinkedInLogoIcon className='w-9 h-9 hover:translate-y-1 duration-300 cursor-pointer'/></a></li>
